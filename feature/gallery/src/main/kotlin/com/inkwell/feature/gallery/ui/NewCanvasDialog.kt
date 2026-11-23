@@ -83,7 +83,7 @@ fun NewCanvasDialog(
                     CanvasSpec.SQUARE_2K to "Square 2K (2048 x 2048)",
                     CanvasSpec.UHD_4K to "4K UHD (3840 x 2160)",
                     CanvasSpec.DEFAULT_PHONE to "Screen Size (1080 x 2400)",
-                    CanvasSpec(2480, 3508, 300) to "Portrait A4 (2480 x 3508)"
+                    CanvasSpec.PRINT_A4_300DPI to "Portrait A4 (2480 x 3508)"
                 )
 
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
