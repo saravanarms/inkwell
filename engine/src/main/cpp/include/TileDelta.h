@@ -2,6 +2,7 @@
 
 #include <cstdint>
 #include <vector>
+#include <utility>
 #include "TileGrid.h"
 
 namespace inkwell {
@@ -20,6 +21,10 @@ struct TileDelta {
     std::vector<uint8_t> preData;
     std::vector<uint8_t> postData;
 
+    TileDelta() = default;
+    TileDelta(uint64_t key, std::vector<uint8_t> pre, std::vector<uint8_t> post)
+        : tileKey(key), preData(std::move(pre)), postData(std::move(post)) {}
+
     size_t getMemoryCost() const {
         return preData.size() + postData.size() + sizeof(TileDelta);
     }
@@ -28,6 +33,9 @@ struct TileDelta {
 struct StrokeRecord {
     int32_t layerId = 1;
     std::vector<TileDelta> deltas;
+
+    StrokeRecord() = default;
+    StrokeRecord(int32_t id) : layerId(id) {}
 
     size_t getMemoryCost() const {
         size_t total = sizeof(StrokeRecord);
