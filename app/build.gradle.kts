@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.inkwell.app"
         minSdk = 29
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0.0-alpha"
 

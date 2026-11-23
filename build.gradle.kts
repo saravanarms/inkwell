@@ -6,6 +6,14 @@ plugins {
     alias(libs.plugins.detekt) apply false
 }
 
+subprojects {
+    configurations.all {
+        resolutionStrategy {
+            force("androidx.compose.material3:material3:1.2.1")
+        }
+    }
+}
+
 tasks.register("clean", Delete::class) {
     delete(rootProject.layout.buildDirectory)
 }
