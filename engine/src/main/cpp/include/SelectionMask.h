@@ -4,7 +4,7 @@
 #include <vector>
 #include <unordered_map>
 #include <algorithm>
-#include "TileCoord.h"
+#include "TileGrid.h"
 
 namespace inkwell {
 
