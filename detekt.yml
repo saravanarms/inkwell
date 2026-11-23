@@ -1,0 +1,26 @@
+build:
+  maxIssues: 0
+
+complexity:
+  TooManyFunctions:
+    maxFunctions: 20
+  LongMethod:
+    threshold: 60
+  ComplexMethod:
+    threshold: 15
+
+formatting:
+  active: true
+  autoCorrect: true
+
+naming:
+  FunctionNaming:
+    functionPattern: '^[a-zA-Z][a-zA-Z0-9]*$'
+  VariableNaming:
+    variablePattern: '^[a-zA-Z][a-zA-Z0-9]*$'
+
+style:
+  MaxLineLength:
+    maxLineLength: 120
+    excludePackageStatements: true
+    excludeImportStatements: true
