@@ -1,4 +1,6 @@
 #include "LayerManager.h"
+#include <algorithm>
+#include <cstring>
 
 namespace inkwell {
 

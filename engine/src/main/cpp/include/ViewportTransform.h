@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstdint>
 #include "Mat3.h"
 
 namespace inkwell {

@@ -1,4 +1,6 @@
 #include "CatmullRomSpline.h"
+#include <algorithm>
+#include <cmath>
 
 namespace inkwell {
 
